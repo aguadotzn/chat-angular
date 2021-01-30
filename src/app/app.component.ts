@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'chat';
+  public messagesList: string[] = []; // Array of messages
+
+  public updateMessage(message: string) {
+    this.messagesList.push(message);
+  }
 }

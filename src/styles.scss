@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Variables
+$primary-color: aquamarine;
+$default-padding: 12px;
+
+// General styles
+html {
+  font-size: 15px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fapi.androidhive.info%2Fres%2Fbg_messages.png&f=1&nofb=1);
+}
+
