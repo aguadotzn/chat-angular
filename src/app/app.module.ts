@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { TextButtonComponent } from './text-button/text-button.component';
+import { MimimiPipe } from './pipes/mimimi.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
-    TextButtonComponent
+    TextButtonComponent,
+    MimimiPipe
   ],
   imports: [
     BrowserModule,
