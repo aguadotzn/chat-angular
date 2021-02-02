@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { TextButtonComponent } from './text-button/text-button.component';
 import { MimimiPipe } from './pipes/mimimi.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MimimiPipe } from './pipes/mimimi.pipe';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
