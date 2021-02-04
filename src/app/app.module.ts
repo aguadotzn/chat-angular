@@ -9,13 +9,15 @@ import { TextButtonComponent } from './components/text-button/text-button.compon
 import { MimimiPipe } from './pipes/mimimi/mimimi.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
     TextButtonComponent,
-    MimimiPipe
+    MimimiPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
