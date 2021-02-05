@@ -10,23 +10,27 @@ import { MimimiPipe } from './pipes/mimimi/mimimi.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HighlightDirective } from './directives/highlight.directive';
-
+import { UserComponent } from './components/user/user.component';
+import { UsersService } from './services/users/users.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
     TextButtonComponent,
     MimimiPipe,
-    HighlightDirective
+    HighlightDirective,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     MatButtonModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
