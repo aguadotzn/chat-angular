@@ -13,6 +13,8 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { UserComponent } from './components/user/user.component';
 import { UsersService } from './services/users/users.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     MimimiPipe,
     HighlightDirective,
     UserComponent,
+    HomeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
