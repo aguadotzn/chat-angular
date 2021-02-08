@@ -1,0 +1,13 @@
+@import "../../../styles.scss";
+
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-message {
+    font-family: $primary_font;
+    text-decoration: underline wavy $primary-color;
+    position: absolute;
+    top: 50%;
+}

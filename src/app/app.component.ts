@@ -8,7 +8,6 @@ import { UsersService } from './services/users/users.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  public messagesList: string[] = []; // Array of messages
   public usersList: User; // Array of users
 
   constructor(private _usersService: UsersService){}
@@ -17,7 +16,5 @@ export class AppComponent implements OnInit{
     this._usersService.getUsers().subscribe((users) => this.usersList = users);
   }
 
-  public updateMessage(message: string) {
-    this.messagesList.push(message);
-  }
+  
 }

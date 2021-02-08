@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MessagesComponent } from './components/messages/messages.component';
-import { TextButtonComponent } from './components/text-button/text-button.component';
+import { MessagesComponent } from './components/contact/messages/messages.component';
+import { TextButtonComponent } from './components/contact/text-button/text-button.component';
 import { MimimiPipe } from './pipes/mimimi/mimimi.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';

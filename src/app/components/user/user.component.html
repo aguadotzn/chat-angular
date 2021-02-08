@@ -1,3 +1,5 @@
-<img class="user-image" src="{{ user.picture.large }}">
-<p class="user-name">{{ user.name.first }}</p>
+<button mat-button (click)="talkTo(user.name.first)" *ngIf="user">
+    <img class="user-image" src="{{ user.picture.large }}">
+    <p class="user-name">{{ user.name.first }}</p>
+</button>
 

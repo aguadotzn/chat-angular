@@ -10,6 +10,6 @@ export class UsersService {
   constructor(private httpClient: HttpClient) { }
 
   public getUsers(): Observable<User> {
-    return this.httpClient.get(`${this.baseUrl}?results=6`) as Observable<User>;
+    return this.httpClient.get(`${this.baseUrl}?results=5`) as Observable<User>;
   }
 }

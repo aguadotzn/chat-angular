@@ -2,5 +2,3 @@
     <aag-user *ngFor="let user of usersList?.results" [user]="user"></aag-user>
 </div>
 <router-outlet></router-outlet>
-<aag-messages [messages]="messagesList"></aag-messages>
-<aag-text-button (actionClicked)="updateMessage($event)" buttonLabel="Send message"></aag-text-button>
