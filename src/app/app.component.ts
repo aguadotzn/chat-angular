@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from './shared/models/user.model';
+import { Result } from './shared/models/user.model';
 import { UsersService } from './shared/services/users/users.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { UsersService } from './shared/services/users/users.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  public usersList: User; // Array of users
+  public usersList: Result[]; // Array of users
 
   constructor(private _usersService: UsersService){}
 

@@ -1,4 +1,4 @@
 <div class="stories" *ngIf="usersList">
-    <aag-user *ngFor="let user of usersList?.results" [user]="user"></aag-user>
+    <aag-user *ngFor="let user of usersList" [user]="user"></aag-user>
 </div>
 <router-outlet></router-outlet>
