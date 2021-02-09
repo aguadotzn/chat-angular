@@ -62,7 +62,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/components/messages/messages.component.ts</code>
+    <code>src/app/components/contact/messages/messages.component.ts</code>
 </p>
 
 
@@ -159,7 +159,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/messages/messages.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/contact/messages/messages.component.ts:9</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -196,9 +196,9 @@ export class MessagesComponent{
                 <p class="comment">
                     <code>./messages.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../styles.scss&#x27;;
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../../../styles.scss&quot;;
 
-:host{
+:host {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -211,7 +211,6 @@ export class MessagesComponent{
   border-radius: 15px;
   padding: 4px 10px;
   background-color: #00968854;
-
 }
 
 .message:nth-child(even) {
@@ -219,6 +218,7 @@ export class MessagesComponent{
   font-style: italic;
   align-self: flex-end;
 }
+
 
 </code></pre>
     </div>
@@ -249,7 +249,7 @@ export class MessagesComponent{
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><p class="message" *ngFor="let msg of messages" appHighlight>{{ msg | mimimi }}</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'aag-root'},{'name': 'MessagesComponent', 'selector': 'aag-messages'},{'name': 'TextButtonComponent', 'selector': 'aag-text-button'},{'name': 'UserComponent', 'selector': 'aag-user'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'aag-root'},{'name': 'ContactComponent', 'selector': 'aag-contact'},{'name': 'HomeComponent', 'selector': 'aag-home'},{'name': 'MessagesComponent', 'selector': 'aag-messages'},{'name': 'TextButtonComponent', 'selector': 'aag-text-button'},{'name': 'UserComponent', 'selector': 'aag-user'}];
     var DIRECTIVES = [{'name': 'HighlightDirective', 'selector': '[appHighlight]'}];
     var ACTUAL_COMPONENT = {'name': 'MessagesComponent'};
 </script>
