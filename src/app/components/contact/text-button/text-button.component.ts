@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class TextButtonComponent {
 
   @Input() public buttonLabel: string;
+  
   @Output() public actionClicked = new EventEmitter();
 
   public message: string; // Message to send

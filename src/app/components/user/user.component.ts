@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
-import { Result } from 'src/app/models/user.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { User } from 'src/app/shared/models/user.model';
 
 @Component({
   selector: 'aag-user',
@@ -8,17 +8,11 @@ import { Result } from 'src/app/models/user.model';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent {
-  @Input() public user: Result;
+  @Input() public user: User;
 
-  constructor(private _router: Router) {
-    
-  }
-
-  ngOnInit(): void {
-    console.log(this.user.name.first);
-  }
+  constructor(private _router: Router, private _activatedRoute: ActivatedRoute) {}
 
   talkTo(user: any) {
-    this._router.navigate(['contact', user]);    
+    this._router.navigate(['contact', user]); 
   }
 }

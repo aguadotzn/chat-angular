@@ -19,5 +19,4 @@ export class ContactComponent implements OnInit {
   public updateMessage(message: string) {
     this.messagesList.push(message);
   }
-
 }

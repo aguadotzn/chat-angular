@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from './models/user.model';
-import { UsersService } from './services/users/users.service';
+import { User } from './shared/models/user.model';
+import { UsersService } from './shared/services/users/users.service';
 
 @Component({
   selector: 'aag-root',
