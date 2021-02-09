@@ -1,0 +1,24 @@
+@import "../../../../styles.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $default-padding;
+  letter-spacing: 1px;
+}
+
+.message {
+  display: flex;
+  border-radius: 15px;
+  padding: 4px 10px;
+  background-color: #00968854;
+}
+
+.message:nth-child(even) {
+  background-color: #4caf5061;
+  font-style: italic;
+  align-self: flex-end;
+}
+
+
