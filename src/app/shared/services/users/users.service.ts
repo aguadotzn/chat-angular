@@ -8,6 +8,7 @@ import { User, Result } from 'src/app/shared/models/user.model';
 export class UsersService {
   private baseUrl = 'https://randomuser.me/api/';
   private results$ = new Subject<User>();
+  public activeUser;
 
   constructor(private httpClient: HttpClient) {
     this.httpClient.get(`${this.baseUrl}?results=10`)

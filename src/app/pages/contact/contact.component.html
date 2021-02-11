@@ -1,3 +1,6 @@
-<p class="header" *ngIf="name">Chatting with {{name}}</p>
+<div class="header"  *ngIf="user">
+    <img class="header-image" src="{{ user.picture.thumbnail }}">
+    <p class="header-title">Chatting with {{name}}</p>
+</div>
 <aag-messages [messages]="messagesList"></aag-messages>
 <aag-text-button (actionClicked)="updateMessage($event)" buttonLabel="Send message"></aag-text-button>

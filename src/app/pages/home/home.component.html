@@ -1,3 +1,7 @@
-<div *ngFor="let user of users">
-    <p class="user-item">{{user.name.first}}</p>
+<div class="stories" *ngIf="users">
+    <aag-user *ngFor="let user of users" [user]="user"></aag-user>
 </div>
+
+<ng-container *ngFor="let user of users">
+    <p class="user-item" (click)="selectUser(user)">{{user.name.first}}</p>
+</ng-container>

@@ -1,8 +1,19 @@
 @import "../../../styles.scss";
 
 .header {
-    padding: $default-padding;
-    text-align: center;
-    font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  .header-title {
     font-family: $primary_font;
+    text-decoration: underline wavy $primary-color;
+  }
+
+  .header-image {
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    padding: $default-padding;
+  }
 }

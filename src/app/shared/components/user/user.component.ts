@@ -13,6 +13,7 @@ export class UserComponent {
   constructor(private _router: Router, private _activatedRoute: ActivatedRoute) {}
 
   talkTo(user: any) {
-    this._router.navigate(['contact', user]); 
+    // this._router.navigate(['contact', user]); 
+    alert('Stories are a WIP functionality');
   }
 }

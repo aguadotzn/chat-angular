@@ -1,4 +1,8 @@
-<div class="stories" *ngIf="usersList">
-    <aag-user *ngFor="let user of usersList" [user]="user"></aag-user>
-</div>
+<nav>
+    <a *ngIf="actualRoute === '/'; else NotHome" href="/">CHAT APP</a>
+    <ng-template #NotHome>
+        <a href="/">Back</a>
+    </ng-template>
+</nav>
+
 <router-outlet></router-outlet>

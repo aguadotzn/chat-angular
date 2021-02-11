@@ -1,7 +1,19 @@
-.stories {
+@import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
+
+nav {
   display: flex;
-  justify-content: space-evenly;
-  background: #7fffd436;
-  padding: 10px 16px;
+  justify-content: space-around;
+  background: #faebd796;
+  padding: 8px 16px;
   border-bottom: 2px dotted;
+  font-weight: bold;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Just Me Again Down Here", cursive;
+  text-decoration: none;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: large;
 }
