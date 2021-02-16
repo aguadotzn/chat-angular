@@ -1,0 +1,25 @@
+<!-- <p *ngIf="name.invalid && name.touched">El nombre es obligatorio</p>
+<p *ngIf="email.invalid && email.touched">El email es obligatorio</p> -->
+
+<div [formGroup]="userForm">
+    <label>
+        username:
+        <input type="text" formControlName="name">
+    </label>
+    <label>
+        email:
+        <input type="email" formControlName="email">
+    </label>
+    <div formGroupName="name">
+        <label>
+            firstname:
+            <input type="text" formControlName="firstname">
+        </label>
+        <label>
+            lastname:
+            <input type="text" formControlName="lastname">
+        </label>
+    </div>
+
+<button click="submit()">Submit</button>
+<button click="newUserForm.reset()">Reset</button>
