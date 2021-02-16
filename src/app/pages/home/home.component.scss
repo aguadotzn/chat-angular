@@ -1,27 +1,41 @@
 @import "../../../styles.scss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
 
 :host {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stories {
   display: flex;
   justify-content: space-evenly;
   background: #7fffd436;
-  padding: 10px 16px;
+  padding: 10px 10px;
   border-bottom: 2px dotted;
 }
 
-
 .user-item {
-    font-family: "Nunito", sans-serif;
-    border: medium groove $primary-color;
-    background-color: antiquewhite;
-    margin: 15px;
-    padding: $default-padding;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Nunito", sans-serif;
+  border: medium groove $primary-color;
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: $default-padding;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.user-item:last-child {
+  background-color: $primary-color;
+}
+
+.user-item-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  transform: rotate(-3deg);
+  a {
+    text-decoration: none;
+  }
 }

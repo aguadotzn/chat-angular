@@ -22,4 +22,9 @@ export class HomeComponent implements OnInit {
     this._usersService.activeUser = user;
     this._router.navigate(['contact', user.name.first]);
   }
+
+  public editUser(user): void {
+    this._usersService.activeUser = user;
+    this._router.navigate(['edit', user]);
+  }
 }

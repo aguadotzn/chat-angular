@@ -4,4 +4,9 @@
 
 <ng-container *ngFor="let user of users">
     <p class="user-item" (click)="selectUser(user)">{{user.name.first}}</p>
+    <p class="user-item-edit" (click)="editUser(user)"><a href="">Edit user</a></p>
 </ng-container>
+
+<p class="user-item user-item-new">
+    <a href="/new">New user</a>
+</p>

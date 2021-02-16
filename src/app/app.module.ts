@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { UsersService } from './shared/services/users/users.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { NewComponent } from './pages/new/new.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     UserComponent,
     HomeComponent,
     ContactComponent,
+    NewComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AppRoutingModule,
     HttpClientModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

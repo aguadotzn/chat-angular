@@ -13,14 +13,14 @@ export class AppComponent implements OnInit{
   public actualRoute = '/';
 
   constructor(private _usersService: UsersService, private _activatedRoute: ActivatedRoute) {
-    this._activatedRoute.url.subscribe(activeUrl => {
-      this.actualRoute = window.location.pathname;
-      console.log(activeUrl);
-      console.log(this.actualRoute);
-    });
+    
   }
 
   public ngOnInit(): void {
     this._usersService.getUsers().subscribe((users) => this.usersList = users);
+
+    this._activatedRoute.data.subscribe((data) => {
+      console.log(data);
+    });
   }
 }
